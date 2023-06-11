@@ -16,5 +16,13 @@ while i<5:
     if ans == num:
         print('Your answer is right!!')
         break
+    else:
+        if i <= 2:
+            if a == x:
+                print('hundreds place is right')
+            if b == y:
+                print('tens place is right')
+            if c == z:
+                print('ones place is right')                
 
     i = i + 1
