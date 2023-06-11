@@ -13,4 +13,8 @@ while i<5:
     y = (num % 100) // 10
     z = num % 10
     
+    if ans == num:
+        print('Your answer is right!!')
+        break
+
     i = i + 1
