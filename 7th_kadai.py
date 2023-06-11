@@ -42,8 +42,6 @@ while i <= 5:
                 print('1   place is smaller')
         
         if i == 5:
-            print("I'm sorry...")  
-
-
+            print("I'm sorry...")
 
     i = i + 1
