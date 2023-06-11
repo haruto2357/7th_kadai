@@ -7,35 +7,39 @@ c = random.randint(0, 9)
 ans = (100 * a) + (10 * b) + c
 
 i = 0
-while i < 5:
+while i <= 5:
     num = int(input('Input number : '))
     x = num // 100
     y = (num % 100) // 10
     z = num % 10
     
     if ans == num:
-        print('Your answer is right!!')
+        print('Your number is right!!')
         break
     else:
         if a == x:
-            print('hundreds place is right')
+            print('100 place is right')
         if b == y:
-            print('tens place is right')
+            print('10  place is right')
         if c == z:
-            print('ones place is right')                
+            print('1   place is right')
+        if a != x and b != y and c != z:
+            print('Your number is wrong...')             
         
         if i >= 3:
             if a > x:
-                print('hundreds place is bigger')
+                print('100 place is bigger')
             elif a < x:
-                print('hundreds place is smaller')
+                print('100 place is smaller')
             if b > y:
-                print('tens place is bigger')
+                print('10  place is bigger')
             elif b < y:
-                print('tens place is smaller')
+                print('10  place is smaller')
             if c > z:
-                print('ones place is bigger')
+                print('1   place is bigger')
             elif c < z:
-                print('ones place is smaller')
+                print('1   place is smaller')
+
+
 
     i = i + 1
