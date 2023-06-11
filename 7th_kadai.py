@@ -17,16 +17,17 @@ while i <= 5:
         print('Your number is right!!')
         break
     else:
+        if a != x and b != y and c != z:
+            print('Your number is wrong')
+        
         if a == x:
             print('100 place is right')
         if b == y:
             print('10  place is right')
         if c == z:
             print('1   place is right')
-        if a != x and b != y and c != z:
-            print('Your number is wrong...')             
-        
-        if i >= 3:
+                     
+        if i >= 3 and i <= 4:
             if a > x:
                 print('100 place is bigger')
             elif a < x:
@@ -39,6 +40,9 @@ while i <= 5:
                 print('1   place is bigger')
             elif c < z:
                 print('1   place is smaller')
+        
+        if i == 5:
+            print("I'm sorry...")  
 
 
 
